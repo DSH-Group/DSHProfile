@@ -34,7 +34,7 @@ body {
     background: var(--clr-light);
     color: var(--clr-dark);
     margin: 0;
-    font-family: var(--ff-primary);
+    font-family: var(--ff-secondary);
     font-size: var(--fs-body);
     line-height: 1.6;
 }
@@ -71,17 +71,22 @@ h3 { font-size: var(--fs-h3) }
 }
 .whatIDo{
     background: var(--clr-accent);
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
 }
+
+
+
+
 
 .intro {
     position: relative;
 }
-@media (min-width: 600px) {
-    .intro {
+@media (min-width: 100px) {
+    .intro, .aboutMe, .projects{
         display: grid;
         margin: 0 auto;
         grid-column-gap: 1em;
+        align-self: start;
         
     }
     .profilePic{
@@ -90,11 +95,6 @@ h3 { font-size: var(--fs-h3) }
         display: grid;
         width: min-content;
         margin: 0 auto;
-        grid-column-gap: 1em;
-        grid-template-areas: 
-            "img title"
-            "img subtitle";
-        grid-template-columns: min-content max-content;
     }
-    
+
 }
