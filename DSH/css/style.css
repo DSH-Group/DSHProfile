@@ -40,7 +40,7 @@ body {
 }
 
 section {
-    padding: 5em 2em;
+    padding: 4em 2em;
 }
 
 img{
@@ -66,23 +66,26 @@ h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
 
-.discription{
+.discription, .introDiscription{
     font-weight: var(--fw-reg);
 }
 .whatIDo{
     background: var(--clr-accent);
-    font-family: var(--ff-primary);
+    font-family: var(--ff-secondary);
 }
 
 
-
-
-
-.intro {
+/*layout*/
+.aboutMe{
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
+.intro .aboutMe{
     position: relative;
 }
 @media (min-width: 100px) {
-    .intro, .aboutMe, .projects{
+    .intro, .aboutMe{
         display: grid;
         margin: 0 auto;
         grid-column-gap: 1em;
@@ -91,10 +94,41 @@ h3 { font-size: var(--fs-h3) }
     }
     .profilePic{
         grid-area: img;
-        min-width: 250px;
+        min-width: 300px;
         display: grid;
         width: min-content;
         margin: 0 auto;
     }
+    .about-profilePic{
+        grid-area: img;
+        min-width: 300px;
+        display: grid;
+        margin: 0 auto;
+    }
+}
 
+
+/*What i do section*/
+.whatIDo{
+    color: var(--clr-dark);
+    text-align: center;
+}
+
+.whatIDo-sectionTitle{
+    position: center;
+}
+.whatIDo-sectionTitle::after{
+    content: '';
+    display: block;
+    width: 4em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: black;
+}
+@media (min-width: 1000px) {
+    .knowledgeBaseCat{
+        display: flex;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
 }
