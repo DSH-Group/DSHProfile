@@ -96,4 +96,5 @@ h3 { font-size: var(--fs-h3) }
             "img subtitle";
         grid-template-columns: min-content max-content;
     }
+    
 }
