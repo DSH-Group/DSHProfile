@@ -8,12 +8,12 @@
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
 
-    --fw-reg: 300;
-    --fw-bold: 900;
+    --fw-reg: 500;
+    --fw-bold: 1000;
 
     --clr-light: rgb(255, 255, 255);
     --clr-dark: #303030;
-    --clr-accent: #9b62ca;
+    --clr-accent: #d4b6ec;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -39,11 +39,20 @@ body {
     line-height: 1.6;
 }
 
+section {
+    padding: 5em 2em;
+}
+
 img{
     display: block;
-    max-width: 50%;
+    max-width: 30%;
 
 }
+
+
+
+
+/*typography*/
 
 h1,
 h2,
@@ -55,3 +64,36 @@ h3 {
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
+
+
+.discription{
+    font-weight: var(--fw-reg);
+}
+.whatIDo{
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+}
+
+.intro {
+    position: relative;
+}
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        
+    }
+    .profilePic{
+        grid-area: img;
+        min-width: 250px;
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+}
