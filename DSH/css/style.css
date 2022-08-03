@@ -14,6 +14,7 @@
     --clr-light: rgb(255, 255, 255);
     --clr-dark: #303030;
     --clr-accent: #d4b6ec;
+    --clr-accent1: #422758;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -49,6 +50,24 @@ img{
 
 }
 
+
+:focus{
+    outline: 3px solid var(--clr-accent1);
+    outline-offset: 3px;
+}
+
+.btn{
+    display: inline-block;
+    padding: .5em 1.5em;
+    background: var(--clr-accent1);
+    color: var(--clr-accent);
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
 
 
 
@@ -107,6 +126,14 @@ h3 { font-size: var(--fs-h3) }
     }
 }
 
+/*intro text*/
+@media (min-width: 800px) {
+    .intro-desc{
+        padding-left: 2.5em;
+        padding-right: 2,5em;
+        
+    }
+}
 
 /*What i do section*/
 .whatIDo{
@@ -131,4 +158,43 @@ h3 { font-size: var(--fs-h3) }
         max-width: 1600px;
         margin: 0 auto;
     }
+    .knowledgeBase + .knowledgeBase{
+        margin-left: 2em;
+    }
+}
+
+
+
+/*freelancer*/
+@media (min-width: 800px) {
+    .myServices, .aboutMe{
+        padding-left: 5em;
+        padding-right: 5em;
+        
+    }
+}
+
+/*about*/
+.about-sectionTitle{
+    text-align: center;
+}
+.about-sectionTitle::after{
+    content: '';
+    display: block;
+    width: 4em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: black;
+}
+.about-profilePic{
+    align-items: center;
+    
+}
+.about-discription::after{
+    content: '';
+    display: block;
+    width: 15em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: black;
 }
