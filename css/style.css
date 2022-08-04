@@ -252,7 +252,12 @@ h3 { font-size: var(--fs-h3) }
 
 
 /*-----navbar-----*/
-
+.nav {
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    min-height: 100px;
+  }
 
 
 
