@@ -43,6 +43,9 @@ body {
 section {
     padding: 4em 2em;
 }
+header {
+    padding: 1em 1em;
+}
 
 img{
     display: block;
@@ -235,6 +238,13 @@ h3 { font-size: var(--fs-h3) }
     margin: 0.5em auto 1em;
     background: var(--clr-accent1);
 }
+
+
+
+
+
+/*-----navbar-----*/
+
 
 
 
