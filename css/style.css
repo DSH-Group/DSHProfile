@@ -137,8 +137,17 @@ h3 { font-size: var(--fs-h3) }
     }
 }
 
+/*-----navbar-----*/
+.nav {
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    min-height: 100px;
+  }
 
 
+
+  
 
 
 /*------intro text------*/
@@ -246,19 +255,6 @@ h3 { font-size: var(--fs-h3) }
     background: var(--clr-accent1);
 }
 */
-
-
-
-
-
-/*-----navbar-----*/
-.nav {
-    display: flex;
-    justify-content: left;
-    align-items: top;
-    min-height: 100px;
-  }
-
 
 
 
