@@ -13,7 +13,7 @@
 
     --clr-light: rgb(255, 255, 255);
     --clr-dark: #303030;
-    --clr-accent: #d4b6ec;
+    --clr-accent: #d6beeb;
     --clr-accent1: #422758;
     
     --fs-h1: 3rem;
@@ -64,6 +64,7 @@ img{
     text-decoration: none;
     cursor: pointer;
     transition: transform 200ms ease-in-out;
+    border-radius: 15px;
 }
 .btn:hover{
     transform: scale(1.1);
@@ -101,10 +102,10 @@ h3 { font-size: var(--fs-h3) }
 
 
 /*------layout------*/
-.aboutMe{
+.about-discription{
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 }
 .intro .aboutMe{
     position: relative;
@@ -199,6 +200,12 @@ h3 { font-size: var(--fs-h3) }
 
 
 /*-----about------*/
+.about-profilePic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
 .about-sectionTitle{
     text-align: center;
 }
@@ -241,4 +248,150 @@ h3 { font-size: var(--fs-h3) }
 
 
 
+
 /*-----Content-----*/
+.contactDescription{
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    
+}
+@media (min-width:1000px) {
+    .contactDescription{
+    padding-left: 10em;
+    padding-right: 10em;
+    }
+}
+.contactPage-sectionTitle{
+    text-align: center;
+}
+.img-contact{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 12000px;
+  margin: 40px 0;
+}
+
+.container .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+/*boxes*/ /*
+.container .card:nth-child(1) .box .content a {
+  background:;
+}
+
+body .container .card:nth-child(2) .box .content a {
+  background:;
+}
+
+body .container .card:nth-child(3) .box .content a {
+  background:;
+}
+
+body .container .card:nth-child(4) .box .content a {
+  background:;
+}
+*/
+
+
+/*card background color*/
+.container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: var(--clr-accent);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.container .card .box:hover {
+  transform: translateY(-50px);
+}
+
+
+/*the box color effect wioth the line in the middle*/
+.container .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--clr-accent1);
+}
+
+.container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.container .card .box .content h2{
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+/*.container .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+.container .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+*/
+
+.container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #422758;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #d4b6ec;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.container .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
