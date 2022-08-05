@@ -16,15 +16,26 @@
 
 <body>
     <header class="navBar">
-        <button class="navToggle" aria-label="toggle navigation">
-            <span class="stackNavButton"><i class="fa-solid fa-bars"></i></span>
-        </button>
+        <!--<button class="navToggle" aria-label="toggle navigation">
+                <span class="stackNavButton"><i class="fa-solid fa-bars"></i></span>
+        </button> -->
         <nav class="nav">
-            <ul class="navList">
-                <li class="navItem"><a href="About.html">About</a></li>
-                <li class="navItem"><a href="Projects.html">Projects</a></li>
-                <li class="navItem"><a href="Contact.html">Contact</a></li>
-            </ul>
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb__item breadcrumb__item-firstChild">
+                        <span class="breadcrumb__inner"><span class="breadcrumb__title">
+                            <a href="About.html">About</a>
+                        </span></span></li>
+                    <li class="breadcrumb__item breadcrumb__item-firstChild">
+                        <span class="breadcrumb__inner"><span class="breadcrumb__title">
+                            <a href="Projects.html">Projects</a>
+                        </span></span></li>
+                    <li class="breadcrumb__item breadcrumb__item-firstChild">
+                        <span class="breadcrumb__inner"><span class="breadcrumb__title">
+                            <a href="Contact.html">Contact</a>
+                        </span></span></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
