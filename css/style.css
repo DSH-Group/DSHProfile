@@ -259,7 +259,7 @@ padding: 0 20px;
 
 
 /*------intro text------*/
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
     .intro-desc{
         padding-left: 10em;
         padding-right: 10em;
@@ -315,10 +315,10 @@ padding: 0 20px;
 
 
 /*------freelancer-----*/
-@media (min-width: 900px) {
-    .myServices, .aboutMe{
-        padding-left: 12em;
-        padding-right: 12em;
+@media (min-width: 1000px) {
+    .myServices{
+        padding-left: 15em;
+        padding-right: 15em;
         
     }
 }
@@ -348,23 +348,37 @@ padding: 0 20px;
     display: block;
     width: 4em;
     height: 1px;
-    margin: 0.5em auto 1em;
+    margin: 0.3em auto 1em;
     background: var(--clr-accent1);
 }
 .about-profilePic{
     align-items: center;
     
 }
-@media (min-width: 900px){
+@media (min-width: 1700px){
     .about-description{
-        padding-left: 6em;
-        padding-right: 6em;
+        padding-left: 17em;
+        padding-right: 17em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .about-discriptions{
+        padding-top: 5em;
+        padding-bottom: 5em;
     }
 }
-@media (max-width: 900px){
+@media (max-width: 1700px){
     .about-description{
         padding-left: 1em;
         padding-right: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .about-discriptions{
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
 }
 /*.about-discription::after{
@@ -463,10 +477,10 @@ body .container .card:nth-child(4) .box .content a {
 /*card background color*/
 .Ccontainer .card .box {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
+  top: 100px;
+  left: 60px;
+  right: 60px;
+  bottom: 160px;
   background: var(--clr-accent);
   border-radius: 15px;
   display: flex;
