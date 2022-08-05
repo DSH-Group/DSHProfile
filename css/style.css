@@ -93,6 +93,7 @@ h3 { font-size: var(--fs-h3) }
 
 .discription, .introDiscription{
     font-weight: var(--fw-reg);
+    margin-top: .5em
 }
 .whatIDo{
     background: var(--clr-accent);
@@ -137,7 +138,16 @@ h3 { font-size: var(--fs-h3) }
     }
 }
 
+
+
+
+
+
 /*-----navbar-----*/
+.nav-link{
+    text-decoration: none;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500|PT+Sans+Narrow:400,700|Play:400,700|Ubuntu+Condensed&display=swap&subset=cyrillic');
 
 
@@ -167,7 +177,7 @@ padding: 0 40px;
 
 .breadcrumb {
 display: flex;
-border-radius: 10px;
+border-radius: 15px;
 margin: auto;
 text-align: center;
 top: 50%;
@@ -181,9 +191,9 @@ justify-content: center;
 
 .breadcrumb__item {
 height: 100%;
-background-color: var(--clr-accent1);
-color: var(--clr-accent);
-border-radius: 7px;
+background-color: var(--clr-accent);
+color: var(--clr-accent1);
+border-radius: 10px;
 letter-spacing: 1px;
 transition: all 0.3s ease;
 position: relative;
@@ -192,7 +202,7 @@ justify-content: center;
 align-items: center;
 font-size: 20px;
 box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-margin: 5px;
+margin: 15px;
 padding: 0 50px;
 cursor: pointer;
 }
@@ -251,8 +261,8 @@ padding: 0 20px;
 /*------intro text------*/
 @media (min-width: 900px) {
     .intro-desc{
-        padding-left: 6em;
-        padding-right: 6em;
+        padding-left: 10em;
+        padding-right: 10em;
         
     }
 }
@@ -290,6 +300,14 @@ padding: 0 20px;
         margin-left: 2em;
     }
 }
+@media (max-width: 1000px) {
+    .knowledgeBase{
+        margin-top: 2em;
+    }
+}
+.btn-des{
+    margin-top: 2em;
+}
 
 
 
@@ -299,12 +317,17 @@ padding: 0 20px;
 /*------freelancer-----*/
 @media (min-width: 900px) {
     .myServices, .aboutMe{
-        padding-left: 8em;
-        padding-right: 8em;
+        padding-left: 12em;
+        padding-right: 12em;
         
     }
 }
-
+.contact-btn{
+    margin-top: 1.5em;
+}
+.free-discription{
+    margin-top: 1em;
+}
 
 
 
@@ -368,11 +391,15 @@ padding: 0 20px;
 
 /*-----Content-----*/
 .contactDescription{
-    font-family: var(--ff-secondary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
-    
+    color: black;
+    margin: 0;
+    font-weight: 500;
+    font-family: var(--ff-primary);
+    font-size: 1.2em;
+    text-align: center;
+
 }
+
 @media (min-width:1000px) {
     .contactDescription{
     padding-left: 10em;
