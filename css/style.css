@@ -109,7 +109,6 @@ h3 { font-size: var(--fs-h3) }
 .about-discriptions{
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
-    margin-bottom: 3em;
     font-weight: var(--fw-reg);
 }
 .intro .aboutMe{
@@ -261,8 +260,8 @@ padding: 0 20px;
 /*------intro text------*/
 @media (min-width: 1000px) {
     .intro-desc{
-        padding-left: 10em;
-        padding-right: 10em;
+        padding-left: 19em;
+        padding-right: 19em;
         
     }
 }
@@ -315,10 +314,10 @@ padding: 0 20px;
 
 
 /*------freelancer-----*/
-@media (min-width: 1000px) {
+@media (min-width: 1500px) {
     .myServices{
-        padding-left: 15em;
-        padding-right: 15em;
+        padding-left: 21em;
+        padding-right: 21em;
         
     }
 }
@@ -357,14 +356,18 @@ padding: 0 20px;
 }
 @media (min-width: 1700px){
     .about-description{
-        padding-left: 17em;
-        padding-right: 17em;
+        padding-left: 22em;
+        padding-right: 22em;
         padding-top: 1em;
-        padding-bottom: 1em;
+        padding-bottom: 3em;
     }
     .about-discriptions{
-        padding-top: 5em;
-        padding-bottom: 5em;
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+    .about-description-title{
+        padding-left: 16em;
+        padding-right: 16em;
     }
 }
 @media (max-width: 1700px){
@@ -409,7 +412,7 @@ padding: 0 20px;
     margin: 0;
     font-weight: 500;
     font-family: var(--ff-primary);
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-align: center;
 
 }
