@@ -313,6 +313,7 @@ padding: 0 20px;
 
 
 
+
 /*------freelancer-----*/
 @media (min-width: 1500px) {
     .myServices{
@@ -327,6 +328,8 @@ padding: 0 20px;
 .free-discription{
     margin-top: 1em;
 }
+
+
 
 
 
@@ -399,6 +402,10 @@ padding: 0 20px;
 
 
 /*-----Projects-----*/
+.project-headers{
+    padding-top: 2em;
+    text-align: center;
+}
 
 
 
@@ -406,7 +413,9 @@ padding: 0 20px;
 
 
 
-/*-----Content-----*/
+
+
+/*-----Contact-----*/
 .contactDescription{
     color: black;
     margin: 0;
@@ -478,12 +487,12 @@ body .container .card:nth-child(4) .box .content a {
 
 
 /*card background color*/
-.Ccontainer .card .box .pbox {
+.Ccontainer .card .box{
   position: absolute;
   top: 100px;
   left: 60px;
   right: 60px;
-  bottom: 160px;
+  bottom: 100px;
   background: var(--clr-accent);
   border-radius: 15px;
   display: flex;
@@ -493,13 +502,13 @@ body .container .card:nth-child(4) .box .content a {
   transition: 0.5s;
 }
 
-.Ccontainer .card .box .pbox:hover{
+.Ccontainer .card .box:hover {
   transform: translateY(-50px);
 }
 
 
 /*the box color effect with the line in the middle*/
-.Ccontainer .card .box .pbox:before {
+.Ccontainer .card .box:before {
   content: "";
   position: absolute;
   top: 0;
@@ -509,12 +518,12 @@ body .container .card:nth-child(4) .box .content a {
   background: var(--clr-accent1);
 }
 
-.Ccontainer .card .box .pbox .content .pcontent{
+.Ccontainer .card .box .content{
   padding: 20px;
   text-align: center;
 }
 
-.Ccontainer .card .box .pbox .content .pcontent h2{
+.Ccontainer .card .box .content h2{
   position: absolute;
   top: -10px;
   right: 30px;
@@ -539,7 +548,7 @@ body .container .card:nth-child(4) .box .content a {
 }
 */
 
-.Ccontainer .card .box .pbox .content .pcontent a {
+.Ccontainer .card .box .content a {
   position: relative;
   display: inline-block;
   padding: 8px 20px;
@@ -551,7 +560,7 @@ body .container .card:nth-child(4) .box .content a {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
 }
-.Ccontainer .card .box .pbox .content .pcontent a:hover {
+.Ccontainer .card .box .content a:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
   background: #fff;
   color: #000;
