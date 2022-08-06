@@ -258,7 +258,7 @@ padding: 0 20px;
 
 
 /*------intro text------*/
-@media (min-width: 1000px) {
+@media (min-width: 1500px) {
     .intro-desc{
         padding-left: 19em;
         padding-right: 19em;
