@@ -403,12 +403,70 @@ padding: 0 20px;
 
 /*-----Projects-----*/
 .project-headers{
-    padding-top: 2em;
+    padding-top: 1.5em;
     text-align: center;
 }
+    /*----Project Pages----*/
 
+    .project-pages{
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    }
+    .project-title{
+        text-align: center;
+        padding-bottom: 1em;
+    }
+    .projectImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .project-title::after{
+        content: '';
+        display: block;
+        width: 4em;
+        height: 1px;
+        margin: 0.3em auto 1em;
+        background: var(--clr-accent1);
+    }
 
+    .project-description{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .projectFooter::before{
+        content: '';
+        display: block;
+        width: 20em;
+        height: 1px;
+        margin: 0.3em auto 1em;
+        background: var(--clr-accent1);
+    }
+    .projectFooter{
+        padding-top: 10em;
+        text-align: center;
+        font-size: 14px;
+        font-style: italic;
+    }
 
+    @media (min-width: 1000px) {
+        .project-description{
+        margin-left: 6em;
+        margin-right: 6em;
+        }
+
+    }
+    @media (max-width: 1000px){
+
+    }
+    @media (max-width: 700px){
+
+    }
 
 
 
