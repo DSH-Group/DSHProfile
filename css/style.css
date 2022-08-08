@@ -260,8 +260,8 @@ padding: 0 20px;
 /*------intro text------*/
 @media (min-width: 1500px) {
     .intro-desc{
-        padding-left: 19em;
-        padding-right: 19em;
+        padding-left: 20em;
+        padding-right: 20em;
         
     }
 }
@@ -317,8 +317,8 @@ padding: 0 20px;
 /*------freelancer-----*/
 @media (min-width: 1500px) {
     .myServices{
-        padding-left: 21em;
-        padding-right: 21em;
+        padding-left: 21.5em;
+        padding-right: 21.5em;
         
     }
 }
@@ -453,19 +453,27 @@ padding: 0 20px;
         font-size: 14px;
         font-style: italic;
     }
-    .DeskOrgImg{
-        background: var(--clr-accent);
-    }
-    @media (min-width: 1000px) {
+    
+    @media (min-width: 1800px) {
         .project-description{
-        margin-left: 20em;
-        margin-right: 20em;
+        margin-left: 22em;
+        margin-right: 22em;
         }
 
     }
-    @media (max-width: 700px){
-
+    @media (max-width: 1800px){
+        .project-description{
+            margin-left: 5em;
+            margin-right: 5em;
+            }
     }
+    @media (max-width: 800px){
+        .project-description{
+            margin-left: 1em;
+            margin-right: 1em;
+            }
+    }
+
 
 
 
