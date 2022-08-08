@@ -406,6 +406,7 @@ padding: 0 20px;
     padding-top: 1.5em;
     text-align: center;
 }
+
     /*----Project Pages----*/
 
     .project-pages{
@@ -476,7 +477,6 @@ padding: 0 20px;
             margin-right: 1em;
             }
     }
-
 
 
 
@@ -602,16 +602,7 @@ body .container .card:nth-child(4) .box .content a {
   z-index: 1;
   transition: 0.5s;
   margin-bottom: 15px;
-}
-
-.Ccontainer .card .box .content p {
-  font-size: 1rem;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.9);
-  z-index: 1;
-  transition: 0.5s;
-}
-*/
+}*/
 
 .Ccontainer .card .box .content a {
   position: relative;
@@ -630,6 +621,13 @@ body .container .card:nth-child(4) .box .content a {
   background: #fff;
   color: #000;
 }
+
+
+
+
+
+
+
 
 
 /*----Working on Page-------*/
