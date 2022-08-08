@@ -631,3 +631,12 @@ body .container .card:nth-child(4) .box .content a {
   background: #fff;
   color: #000;
 }
+
+
+/*----Working on Page-------*/
+.underConstruction {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    
+}
