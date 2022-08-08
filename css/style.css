@@ -335,6 +335,32 @@ padding: 0 20px;
 
 
 
+/*------footer------*/
+.footer::before{
+    content: '';
+    display: block;
+    width: 20em;
+    height: 1px;
+    margin: 0.3em auto 1em;
+    background: var(--clr-accent1);
+}
+.footer{
+        padding-top: 10em;
+        padding-bottom: 3em;
+        text-align: center;
+        font-size: 14px;
+        font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
 /*-----about------*/
 .about-profilePic{
     display: block;
@@ -443,18 +469,12 @@ padding: 0 20px;
         padding-top: 1em;
         padding-bottom: 1em;
     }
-    .projectFooter::before{
-        content: '';
-        display: block;
-        width: 20em;
-        height: 1px;
-        margin: 0.3em auto 1em;
-        background: var(--clr-accent1);
-    }
+    
     .projectFooter{
-        padding-top: 10em;
+        padding-top: 2em;
+        padding-bottom: 3em;
         text-align: center;
-        font-size: 14px;
+        font-size: 18px;
         font-style: italic;
     }
     
