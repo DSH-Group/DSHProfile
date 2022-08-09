@@ -505,7 +505,7 @@ padding: 0 20px;
 
 /*-----Contact-----*/
 .contactDescription{
-    font-size: 1.05em;
+    font-size: 1.08em;
     text-align: center;
     margin-left: 1em;
     margin-right: 1em;
@@ -513,8 +513,8 @@ padding: 0 20px;
 
 @media (min-width:1000px) {
     .contactDescription{
-        margin-left: 15em;
-        margin-right: 15em;
+        margin-left: 18em;
+        margin-right: 18em;
     }
 }
 .contactPage-sectionTitle{
