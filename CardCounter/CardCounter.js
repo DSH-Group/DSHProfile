@@ -1,58 +1,73 @@
 let count = 0;
-let deckCount = 0
+let newCount = 0;
+let holdBet = ""
 
-function cc(card) {
+function cc(card, deckNumber) {
 
- if (card >= 2 && card <= 6){
-    count = count++;
+//The math for counting cards
+ for (let i = 0; i < card.length; i++) {
+  if (card[i] >= 2 && card[i] <= 6){
+    count = count + 1;
     
-  }
-  if (card >= 7 && card <= 9) {
+  } 
+  if (card[i] >= 7 && card[i] <= 9) {
     count = count;
     
   }
-  switch (card) {
+  switch (card[i]) {
     case 10:
     case 'J': 
     case 'Q':
     case 'K': 
     case 'A':
-    count = count--;
+    count = count - 1;
     break;
   }
+  
+ }
+ 
 
-var holdBet
 
+
+// Bet type
 if (count >= 4 && count >= 5){
-  holdBet = "Bet Low"
+  holdBet = "Bet Amount: Low"
 }
 if(count >= 6 && count <=8){
-  holdBet = "Bet Mid"
+  holdBet = "Bet Amount: Mid"
 }
 if (count >= 9){
-  holdBet = "Bet High"
+  holdBet = "Bet Amount: High"
 }
 if (count <= 4 && count >= 2){
-  holdBet = " Hold"
+  holdBet = "Bet Type: Hold"
 }
 if (count <= 1){
-  holdBet = " Fold or Hold"
+  holdBet = "Bet Type: Fold or Hold"
 }
 if (count <= 0){
-  holdBet = "Fold"
+  holdBet = "Bet Type: Fold"
+}
+if (deckNumber == undefined){
+  holdBet = holdBet
 }
 
-return count + holdBet
-  
+
+
+
+return holdBet + nc(count, deckNumber)
 }
 
-function dc(deckNumber){
-  var newCount
-  if (deckCount >=1){
-    newCount = count / deckCount  
-    return newCount
+// what to do when you have multiple decks in play
+function nc(fCount, deckNum){
+  if (deckNum > 1){
+    newCount = fCount / deckNum  
+  } if (deckNum == undefined){
+    return "Please specify the number of decks used."
   }
-
-  return newCount
+  else {newCount = fCount}
+  
+  return ", Final Count: " + newCount;
 }
 
+console.log(cc([2,2,2,2,3], 1))
