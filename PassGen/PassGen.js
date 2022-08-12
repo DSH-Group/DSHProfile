@@ -1,45 +1,37 @@
-function PassSetting(Length, CharacterType, CaseSensitive){
-    let passGen = ""
+function PassSetting(Length, CharacterType){
+    let passGen = []
     let passwordLength = Length
+    let alphaCount = 0
+    let numCount = 0
+    let symbolCount = 0
     let Characters = {
-        alpha: "abcdefghijklmnopqrstuvwxyz".split(""),
-        numeric: "0123456789".split(""),
-        specialCharacter: "!, @, #, $, %,^ , &, *"
+        alpha: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""),
+        //numeric: "0123456789".split(""),
+        specialCharacter: ['!', '@', '#', '$', '%','^' , '&', '*', '_']
     }
-    let CapCharacters = {
-        alpha: "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""),
-        numeric: "0123456789".split(""),
-        specialCharacter: "!, @, #, $, %,^ , &, *"
-    }
+    console.log(Characters.specialCharacter)
 
-  /*  if (CaseSensitive == "lower case"){
-
-        for (let i = 0; i <= Length; i++) {
-            if (CharacterType == "alphas"){
-            passGen.push(Math.random(Characters.alpha))
-            }
-            if (CharacterType == "numeric"){
-            passGen.push(Math.random(Characters.CharacterType[1]))
-            }
-            if (characterType == "special characters"){
-            passGen.push(Math.random(Characters.CharacterType[2]))
-            }
-        }   
-    }
-    if (CaseSensitive == "upper case"){
-        for (let i = 0; i <= Length; i++) {
-            passGen.push(Math.random(CapCharacters.alpha))
-            passGen.push(Math.random(CapCharacters.numeric))
-            passGen.push(Math.random(CapCharacters.specailCharacters))
+    for (let i = 1; i <= Length; i++) {
+        
+        if (CharacterType.indexOf("alphas") !== -1) {
+            alphaCount = Math.round(Math.random()*52)
+            passGen.push(Characters.alpha[alphaCount])
         }
+        if (CharacterType.indexOf("numeric") !== -1){
+            numCount = Math.round(Math.random()*9)
+            passGen.push(numCount)
+        }
+        if (CharacterType.indexOf("special characters") !== -1){
+            symbolCount = Math.round(Math.random()*9)
+            passGen.push(Characters.specialCharacter[symbolCount])
+        }
+           
     }
-    */
-    // return passGen
-    console.log(Characters.numeric);
+    return passGen.join("")
+    
 }
 
-PassSetting()
-
-//14, [alpha, numeric], "lower case"
+let result = PassSetting(5, ["alphas", "numeric", "special characters"])
+console.log("Final Result: ", result)
 
 
