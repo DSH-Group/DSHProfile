@@ -1,3 +1,5 @@
+//The main function
+
 function PassSetting(Length, CharacterType){
     let passGen = []
     let passwordLength = Length
@@ -35,3 +37,14 @@ let result = PassSetting(5, ["alphas", "numeric", "special characters"])
 console.log("Final Result: ", result)
 
 
+
+//The copy button
+
+function copyTextBtn() {
+    /* Get the text field */
+    var copyText = document.getElementById("myInput");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); 
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copied the text: " + copyText.value);
+    }

@@ -286,17 +286,21 @@ padding: 0 20px;
     display: block;
     width: 4em;
     height: 1px;
-    margin: 0.5em auto 1em;
+    margin: 0.2em auto 1em;
     background: var(--clr-accent1);
 }
 @media (min-width: 1000px) {
     .knowledgeBaseCat{
         display: flex;
-        max-width: 1500px;
+        max-width: 1300px;
         margin: 0 auto;
     }
     .knowledgeBase + .knowledgeBase{
-        margin-left: 2em;
+        margin-left: 4em;
+    }
+    .knowledgeBase{
+        
+        border-color: #422758;
     }
 }
 @media (max-width: 1000px) {
@@ -304,8 +308,8 @@ padding: 0 20px;
         margin-top: 2em;
     }
 }
-.btn-des{
-    margin-top: 2em;
+.wid-btn{
+    padding-top: 3em;
 }
 
 
@@ -506,8 +510,34 @@ padding: 0 20px;
             }
     }
 
+    /*------PassGen-------*/
+    .passGenSection, .passGenSubtitles{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .passGenSubtitles{
+        padding-top: 3em;
+    }
+    .passGen-varElements{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-
+    .passGenBtn{
+        position: relative;
+        padding: .2em 2em;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .passGenBtn-copy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 
 
 
@@ -626,14 +656,17 @@ body .container .card:nth-child(4) .box .content a {
   font-size: 8rem;
   color: rgba(255, 255, 255, 0.1);
 }
+.Ccontainer .card .box .content p{
+    font-size: 1rem;
+  }
 
-/*.Ccontainer .card .box .content h3 {
+.Ccontainer .card .box .content h3 {
   font-size: 1.8rem;
-  color: #fff;
+  color: rgb(0, 0, 0);
   z-index: 1;
   transition: 0.5s;
   margin-bottom: 15px;
-}*/
+}
 
 .Ccontainer .card .box .content a {
   position: relative;
