@@ -27,7 +27,7 @@
 </header>
 <section class="PassGen">
     <img src="assets/fix1.jpg" class="underConstruction"/>
-   <!-- <h2 class="project-title">PassGen</h2>
+   <h2 class="project-title">PassGen</h2>
     <script type="text/javascript" src="PassGen/PassGen.js">
 
     </script>
@@ -37,17 +37,24 @@
     </div>
     <h4 class="passGenSubtitles">Pick your prefrences</h4>
     <div class="passGen-varElements">
-        <p>How long would you like it to be?</p>
-        <form type="text" id="passGenLength"></input>
+        <div class="passGen-dropdown">
+            <label for="passGen-length">How long would you like it to be?</label>
+            <select name="" id="dog-names">
+                <option value="6">6 Characters</option>
+                <option value="15">15 Characters</option>
+                <option value="25">25 Characters</option>
+                <option value="35">35 Characters</option>
+            </select>
+          </div>
     </div>
     <div class="passGen-varElements">
         <p>What type of Characters?</p>
         <input type="radio" id="passGenAlpha" value="alpha"><label for="passGenAlpha">Alphabet</label>
         <input type="radio" id="passGenNum" value="num"><label for="passGenNum">Numbers</label>
-        <input type="radio" id="passGenSpecialChar" value="specialChar"><label for="passGenSpecialChar">Special Characters</label>
-        <button type="button" class="passGenBtn" id="passGenBtn">Submit</button>
+        <input type="radio" id="passGenSpecialChar" value="specialChar"><label for="passGenSpecialChar">Special Characters</label></br>
+        <input type="submit" value="Submit" class="passGenBtn">
     </div>
-    <div class="passGen-varElements">
+    <!--<div class="passGen-varElements">
         <p></p>
     </div>--> 
     
