@@ -523,6 +523,11 @@ height: 35px;
             }
     }
 
+
+
+
+
+
     /*------PassGen-------*/
     .passGenSection, .passGenSubtitles{
         display: flex;
@@ -554,7 +559,43 @@ height: 35px;
     .passGen-SubBtn{
         
     }
+
+
+
+
+
+
+    /*----CardCounter------*/
+    .cardcount-section{
+        
+    }
+    .cardCount-layout{
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px;
+        padding: 5px;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .CardCountBtn{
+        background-color: var(--clr-accent); /* Green */
+        border: none;
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: grid;
+        align-items: center;
+        font-size: 15px;
+    }
+    .cardcount-varElement{
+        padding-top: 50px;
+    }
     
+
+
+
+
 
 
 

@@ -70,3 +70,12 @@ function nc(fCount, deckNum){
 }
 
 console.log(cc([2,2,2,2,3], 1))
+
+
+let slider = document.getElementById("deckCount");
+let output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
