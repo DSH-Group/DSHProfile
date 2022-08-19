@@ -238,7 +238,6 @@ height: 35px;
     font-size: 15px;
 }
 .breadcrumb__item {
-    
     padding: 0 50px;
 }
 }
@@ -249,10 +248,9 @@ height: 35px;
 }
 .breadcrumb__item {
     margin: 9px;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 .breadcrumb__title{
-    
     font-size: 15px;
 }
 .container {
