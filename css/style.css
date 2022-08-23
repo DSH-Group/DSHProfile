@@ -595,6 +595,16 @@ height: 35px;
 
 
 
+    /*-------------3D Store---------------*/
+    .section-3dstore{
+        border-style: solid;
+        border-color: var(--clr-accent1);
+    }
+    
+
+
+
+
 
 
 
