@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:00,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="../css/3dstore.css">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="../assets/LogoTransBack.png"/>
+</head>
+
+<header class="store__page store__page--header">
+    <nav class="3dstore_nav">
+            
+    </nav>
+</header>
+
+<section class="store__loginPage">
+    <div class="authentication__box">
+
+        <form action="" id="login" class="form">
+            <h2 class="form__title">Login</h2>
+
+            <div class="form__input-error form--hidden" id="loginError">Incorrect username or password.</div>
+
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username">
+            </div>
+
+            <div class="form__input-group">
+                <input type="password" class="form__input" placeholder="Password" id="passwordVis">
+                <input type="checkbox" class="form__input-checkbox" onclick="passVisFunc()"> Show Password</input>
+            </div>
+            <button type="submit" class="form__login-button">Sign In</button>
+            <p class="form__text">
+                <a href="3dStore-forgotPass.html" class="form__link-reg">Forgot your Password?</a>
+            </p>
+            <p class="form__text">OR</p>
+            <p class="form__text">
+                <a  href="3dStore-Register.html"class="form__link form__link-creatAccount" id="linkCreatAccount">Create Account</a>
+            </p>
+        </form>
+    </div>
+    <script src="../3Dstore/3DStoreJS/3dstore-login.js"></script>
+</section>

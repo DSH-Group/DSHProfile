@@ -1,0 +1,460 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root{
+    --ff-primary: 'Quicksand', sans-serif;
+
+    --fw-reg: 500;
+    --fw-bold: 1000;
+
+    --clr-light: rgb(255, 255, 255);
+    --clr-dark: #000000;
+    --clr-accent: #6d4d88;
+    --clr-darkAccent: #53346d;
+    
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.2rem;
+    --header-height: 3rem;
+    
+
+    /* nav styling */
+    --nav-width: 68px;
+    --first-color: #4723D9;
+    --first-color-light: #AFA5D9;
+    --white-color: #F7F6FB;
+    --body-font: 'Nunito', sans-serif;
+    --normal-font-size: 1rem;
+    --z-fixed: 100,
+    
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.02rem;
+    }
+}
+
+
+body {
+    background-image: url(https://img.freepik.com/premium-vector/geometric-pattern-with-connected-line-dots-grey-graphic-background-connectivity-modern-stylish-polygonal-backdrop-your-design-vector-illustration_208588-1410.jpg?w=1380);
+    background-color: rgb(226, 226, 226);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+
+
+/*-----home page navbar for dsh website--
+.nav-link{
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500|PT+Sans+Narrow:400,700|Play:400,700|Ubuntu+Condensed&display=swap&subset=cyrillic');
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+
+nav {
+height: 100%;
+font-family: var(--ff-secondary);
+font-weight: var(--fw-bold);
+
+}
+
+.container {
+display: flex;
+flex-direction: column;
+height: 100%;
+width: 100%;
+min-width: 480px;
+padding: 0 40px;
+}
+
+.breadcrumb {
+display: flex;
+border-radius: 15px;
+margin: auto;
+text-align: center;
+top: 50%;
+width: 100%;
+height: 35px;
+transform: translateY(-50%);
+z-index: 1;
+justify-content: center;
+}
+
+
+.breadcrumb__item {
+height: 100%;
+background-color: var(--clr-accent);
+color: var(--clr-accent1);
+border-radius: 15px;
+letter-spacing: 1px;
+transition: all 0.3s ease;
+position: relative;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+margin: 20px;
+padding: 0 50px;
+cursor: pointer;
+}
+
+
+.breadcrumb__item:hover {
+transform: scale(1.1);
+}
+
+
+.breadcrumb__inner {
+display: flex;
+flex-direction: column;
+margin: auto;
+z-index: 2;
+}
+
+.breadcrumb__title {
+font-size: 18px;
+text-overflow: ellipsis;  
+overflow: hidden;
+white-space: nowrap;
+font-weight: bold;
+
+}
+
+
+@media all and (max-width: 1000px) {
+.breadcrumb {
+height: 35px;
+}
+
+.breadcrumb__title{
+    font-size: 15px;
+}
+.breadcrumb__item {
+    padding: 0 50px;
+}
+}
+
+@media all and (max-width: 710px) {
+.breadcrumb {
+    height: 40px;
+}
+.breadcrumb__item {
+    margin: 9px;
+    padding: 0 15px;
+}
+.breadcrumb__title{
+    font-size: 15px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    min-width: 200px;
+    padding: 0 40px;
+    }
+}
+---*/
+
+
+
+/*-----Navbar-----*/
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+a{
+    text-decoration: none
+}
+.header{
+    width: 100%;
+    height: var(--header-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: var(--white-color);
+    z-index: var(--z-fixed);transition: .5s
+}
+.header_toggle{
+    color: var(--first-color);
+    font-size: 1.5rem;
+    cursor: pointer
+}
+.header_img{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden
+}
+.header_img img{
+    width: 40px
+}
+.l-navbar{
+    position: fixed;
+    top: 0;
+    left: -30%;
+    width: var(--nav-width);
+    height: 100vh;
+    background-color: var(--first-color);
+    padding: .5rem 1rem 0 0;
+    transition: .5s;
+    z-index: var(--z-fixed)
+}
+.nav{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden
+}
+.nav_logo, 
+.nav_link{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: 1rem;
+    padding: .5rem 0 .5rem 1.5rem
+}
+.nav_logo{
+    margin-bottom: 2rem
+}
+.nav_logo-icon{
+    font-size: 1.25rem;
+    color: var(--white-color)
+}
+.nav_logo-name{
+    color: var(--white-color);
+    font-weight: 700
+}
+.nav_link{
+    position: relative;
+    color: var(--first-color-light);
+    margin-bottom: 1.5rem;
+    transition: .3s
+}
+.nav_link:hover{
+    color: var(--white-color)
+}
+.nav_icon{
+    font-size: 1.25rem
+}
+.show{
+    left: 0
+}
+.body-pd{
+    padding-left: calc(var(--nav-width) + 1rem)
+}
+.active{
+    color: var(--white-color)
+}
+.active::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 32px;
+    background-color: var(--white-color)
+}
+.height-100{
+    height:100vh
+}
+@media screen and (min-width: 768px){
+    body{
+        margin: calc(var(--header-height) + 1rem) 0 0 0;
+        padding-left: calc(var(--nav-width) + 2rem)
+    }
+    .header{
+        height: calc(var(--header-height) + 1rem);
+        padding: 0 2rem 0 calc(var(--nav-width) + 2rem)
+    }
+    .header_img{
+        width: 40px;height: 40px
+    }
+    .header_img img{
+        width: 45px
+    }
+    .l-navbar{
+        left: 0;padding: 1rem 1rem 0 0
+    }
+    .show{
+        width: calc(var(--nav-width) + 156px)
+    }
+    .body-pd{
+        padding-left: calc(var(--nav-width) + 188px)
+    }
+}
+
+
+
+
+
+/*-------Home page------*/
+
+
+
+
+
+/*------Login Page----------*/
+.store__loginPage{
+    margin: 0;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authentication__box{
+    padding: 1rem;
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255)
+}
+
+.form--hidden{
+    display: none;
+}
+
+.form > *:first-child{
+    margin-top: 0;
+}
+
+.form > *:last-child{
+    margin-bottom: 0;
+}
+
+.form__title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form__input-error {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: red;
+}
+.form__input-group{
+    margin-bottom: 5px;
+
+}
+.form__input{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #555;;
+    outline: none;
+    background: #eeeeee;
+}
+.form__input:focus {
+    border-color: var(--clr-darkAccent);
+    background-color: white
+}
+.form__input-error{
+    color:red;
+    border-color: red;
+}
+.form__login-button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size:1.1rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline:none;
+    cursor: pointer;
+    background: var(--clr-accent);
+}
+.form__login-button:hover{
+    background: var(--clr-darkAccent);
+}
+.form__login-button:active{
+    transform: scale(0.99);
+}
+.form__text{
+    Text-align: center;
+}
+.form__link{
+    color: var(--clr-darkAccent);
+    text-decoration: none;
+    cursor: pointer;
+}
+.form__link-reg:hover{
+    text-decoration: underline;
+}
+.form__link-creatAccount{
+    display: inline-block;
+    padding: .2em 1em;
+    background: var(--clr-accent);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+    border-radius: 10px;
+}
+.form__link-creatAccount:hover{
+    transform: scale(1.1);
+}
+
+/*-----Account Page-----*/
+
+
+
+
+
+
+/*-----Product Page------*/
+
+/*-----extra------*/
+.underConstruction {
+    padding-top: 1em;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    
+}
+
+.footer::before{
+    content: '';
+    display: block;
+    width: 20em;
+    height: 1px;
+    margin: 0.3em auto 1em;
+    background: var(--clr-accent1);
+}
+.footer{
+        padding-top: 10em;
+        padding-bottom: 3em;
+        text-align: center;
+        font-size: 12px;
+        font-style: italic;
+}
