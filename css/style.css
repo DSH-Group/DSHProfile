@@ -403,8 +403,8 @@ height: 35px;
 }
 @media (min-width: 1700px){
     .about-description{
-        padding-left: 22em;
-        padding-right: 22em;
+        padding-left: 28em;
+        padding-right: 28em;
         padding-top: 1em;
         padding-bottom: 3em;
     }
@@ -413,8 +413,8 @@ height: 35px;
         padding-bottom: 4em;
     }
     .about-description-title{
-        padding-left: 16em;
-        padding-right: 16em;
+        padding-left: 17em;
+        padding-right: 17em;
     }
 }
 @media (max-width: 1700px){
