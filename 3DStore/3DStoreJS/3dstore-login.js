@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     loginForm.addEventListener("submit", e => {
         e.preventDefault();
-
+        
         //perform ajax login
         setFormMessage(loginForm, "error", "#loginError")
     })
